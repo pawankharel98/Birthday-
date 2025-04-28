@@ -36,11 +36,41 @@ body {
   margin-bottom: 10px;
   color: #FF5E94;
 }
+
 .right{
   text-align: right;
   margin-top: 30px;
   color: #555;
     }
+.next-page-button {
+
+            position: fixed;
+            bottom: 30px;
+
+            padding: 8px 25px;
+
+            font-size: 1rem;
+
+            background: linear-gradient(45deg, #ff9ecd, #ff71b6);
+            border: none;
+
+            border-radius: 25px;
+
+            color: white;
+
+            cursor: pointer;
+            box-shadow: 
+
+                0 0 15px rgba(255, 113, 182, 0.5),
+
+                0 0 30px rgba(255, 113, 182, 0.3);
+
+            font-family: 'Arial', sans-serif;
+        }
+
+
+a{
+  text-decoration: none;
 }
 @media (max-width: 500px) {
       .card {
@@ -54,4 +84,4 @@ body {
       .message {
         font-size: 14px;
       }
-    }
+              }
