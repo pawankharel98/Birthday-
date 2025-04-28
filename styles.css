@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+  border-sizing: border-box;
+}
+body {
+  width: 100%;
+  font-family: 'Pacifico', cursive;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+  overflow-x: hidden;
+  line-height: 1.5;
+  background: linear-gradient(to bottom right, #fde6f0, #ffe8f3);
+  color: #333;
+}
+.container-2{
+  width: 600px;
+  border: 2px solid white;
+  border-radius: 7px;
+  margin-top: 50%;
+  padding: 30px 20px;
+  margin-bottom: 50%;
+  background-color: #fff;
+  scale: 1;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+.last{
+  color: #FF5E94;
+}
+.wish{
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 10px;
+  color: #FF5E94;
+}
+.right{
+  text-align: right;
+  margin-top: 30px;
+  color: #555;
+    }
+}
+@media (max-width: 500px) {
+      .card {
+        padding: 20px;
+      }
+
+      .title {
+        font-size: 22px;
+      }
+
+      .message {
+        font-size: 14px;
+      }
+    }
