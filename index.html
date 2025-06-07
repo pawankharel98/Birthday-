@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Happy Birthday!</title>
   <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
   <div class="container">
@@ -17,9 +17,53 @@
     </div>
 
     <div class="btns">
-      <button class="send-love">❤️ Send Love</button>
       <a href="gallery.html" class="button-link">❤️ Click me</a>
     </div>
   </div>
+
+  <!-- Background Music -->
+  <audio id="bg-music" src="birthday.mp3" type="audio/mp3" preload="auto"></audio>
+
+  <script>
+  
+    setInterval(() => {
+      createDrop("❤️");
+      createDrop("🎉 Happy Birthday 🎉");
+    }, 300);
+
+    function createDrop(content) {
+      const drop = document.createElement("div");
+      drop.classList.add("rain");
+      drop.innerText = content;
+
+      
+      drop.style.left = Math.random() * 100 + "vw";
+
+      
+      const duration = Math.random() * 4 + 3;
+      drop.style.animationDuration = duration + "s";
+
+      
+      const scale = Math.random() * 1 + 0.5;
+      drop.style.transform = `scale(${scale})`;
+
+      document.body.appendChild(drop);
+
+      
+      setTimeout(() => {
+        drop.remove();
+      }, duration * 1000);
+    }
+
+    
+    window.addEventListener("load", () => {
+      setTimeout(() => {
+        const music = document.getElementById("bg-music");
+        music.play().catch(() => {
+          console.log("Auto-play blocked. User interaction may be required.");
+        });
+      }, 2000);
+    });
+  </script>
 </body>
 </html>
