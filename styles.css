@@ -46,7 +46,25 @@
       color: #e75480;
       font-size: 1.2rem;
     }
+.btns {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
 
+    button, a.button-link {
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      border-radius: 8px;
+      background-color: #FF5E94;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.3s ease, background-color 0.3s ease;
+      text-decoration: none;
+    }
     /* Animations */
     @keyframes fadeInUp {
       from {
