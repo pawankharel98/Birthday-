@@ -20,9 +20,7 @@
     <div class="btns">
       <a href="gallery.html" class="button-link">❤️ Click me</a>
     </div>
-    <audio id="bg-music" src="your-music.mp3" autoplay muted loop></audio>
-<button id="unmute-btn">🔊 Unmute Music</button>
-    
+      
   </div>
 
   <!-- Background Music -->
@@ -68,16 +66,6 @@
         });
       }, 2000);
     });
-  const music = document.getElementById("bg-music");
-  const unmuteBtn = document.getElementById("unmute-btn");
-
-  unmuteBtn.addEventListener("click", () => {
-    music.muted = false;
-    music.play().catch(() => {
-      console.log("Play failed. Try again after user interaction.");
-    });
-    unmuteBtn.style.display = "none";
-  });
   </script>
 </body>
 </html>
